@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 const FetchRecipe = () => {
-  const key = " 29d587081cd94aba8413d56404bfcead";
-  const appId = "ef6df93e";
+  const appApi = "GET https://api.spoonacular.com/recipes/complexSearch";
 
   return <h2>hello</h2>;
 };
