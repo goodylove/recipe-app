@@ -1,6 +1,7 @@
 import react from "react";
 import ellipse from "../assets/Ellipse 10.png";
 import homeb from "../assets/bg4.jpg";
+import FetchRecipe from "./../components/common/FetchRecipie";
 
 const Home = () => {
   const myStyle = {
@@ -18,6 +19,7 @@ const Home = () => {
       <div style={myStyle}>
         <img src={ellipse} alt="" />
       </div>
+      <FetchRecipe />
     </div>
   );
 };
