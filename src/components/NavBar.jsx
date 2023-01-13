@@ -9,6 +9,16 @@ const NavBar = () => {
     <div className="nav">
       <div className="left-side">
         <img src={LogoImage} alt="logo" id="img" />
+        <div className="hidden-link">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/Categories">Categories</Link>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="right-side">
         <ul>

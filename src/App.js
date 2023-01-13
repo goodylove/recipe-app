@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <NavBar />;
+      <NavBar />
       <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="/Categories" element={<Categories />} />
