@@ -1,6 +1,6 @@
-/* .home{
-    background-image: url("../assets/image8.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+.home p{
+    color: rgb(66, 12, 215);
+    font-size: 40px;
+    font-weight: 700;
+    
+}
