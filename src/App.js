@@ -1,12 +1,19 @@
 import logo from "./logo.svg";
-import FetchRecipe from "./components/common/FetchRecipie";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import Categories from "./pages/Categorie";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <FetchRecipe />
+      <NavBar />;
+      <Routes>
+        <Route path="/" index element={<Home />} />
+        <Route path="/Categories" element={<Categories />} />
+      </Routes>
     </div>
   );
 }

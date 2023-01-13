@@ -8,12 +8,10 @@ const NavBar = () => {
       <div className="right-side">
         <ul>
           <li>
-            <Link to="/" Home>
-              Home
-            </Link>
+            <Link to="/Home">Home</Link>
           </li>
           <li>
-            <Link to="Categories">Categories</Link>
+            <Link to="/Categories">Categories</Link>
           </li>
         </ul>
       </div>
