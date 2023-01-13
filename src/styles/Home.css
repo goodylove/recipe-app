@@ -2,5 +2,9 @@
     color: rgb(66, 12, 215);
     font-size: 40px;
     font-weight: 700;
-    
+    display: grid;;
+    align-content: center;
+    justify-items: center;
+ 
+
 }
