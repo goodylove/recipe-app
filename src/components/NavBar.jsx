@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Home from "./../pages/Home";
+import LogoImage from "../assets/Ellipse 10.png";
+import "../styles/Nav.css";
+
 const NavBar = () => {
   return (
     <div className="nav">
-      <div className="left-side"></div>
+      <div className="left-side">
+        <img src={LogoImage} alt="logo" id="img" />
+      </div>
       <div className="right-side">
         <ul>
           <li>
