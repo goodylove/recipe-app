@@ -10,6 +10,8 @@ const Recipe = ({ label, image }) => {
     width: "100%",
     borderRadius: "5px",
     boxShadow: "2px 2px 2px gray ,-2px -2px 2px  gray",
+
+    textAlign: "center",
   };
   return (
     <div className="recipe" style={mystyle}>
@@ -18,7 +20,7 @@ const Recipe = ({ label, image }) => {
         alt=""
         style={{ width: "200px", height: "150px", padding: "20px" }}
       />
-      <span>{label}</span>
+      <span style={{ fontSize: "14px", padding: "5px" }}>{label}</span>
     </div>
   );
 };

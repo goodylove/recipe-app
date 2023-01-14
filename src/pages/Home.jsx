@@ -2,6 +2,7 @@ import react from "react";
 import ellipse from "../assets/Ellipse 10.png";
 import homeb from "../assets/bg4.jpg";
 import FetchRecipe from "./../components/common/FetchRecipie";
+
 import "../styles/Home.css";
 
 const Home = () => {

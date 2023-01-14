@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Categories from "./pages/Categorie";
 
 import "./App.css";
+// import FetchRecipe from './components/common/FetchRecipie';
 
 function App() {
   return (

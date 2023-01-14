@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Recipe from "../Recipe";
-// import "../styles/FetchRecipe.css";
-
-// import AllRecipe from "./RecipeItems";
-// import Pasta from "./../utilit/pasta";
+import "./FetchRecipe.css";
 
 const FetchRecipe = () => {
   const [chicken, setChicken] = useState([]);
@@ -43,33 +40,12 @@ const FetchRecipe = () => {
     setSalad(data4.hits);
     setBuger(data5.hits);
   };
-  const getStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    flexDirection: "column",
-    alignItems: "center",
-    width: "100%",
-  };
-  const styleDiv = {
-    width: "100%",
-    display: "grid",
-    columnGap: "40px",
-    gridTemplateColumns: "1fr  1fr 1fr",
-    alignContent: "center",
-    justifyItems: "center",
-  };
-  const styleDiv2 = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    width: "80%",
-  };
 
   return (
-    <div className="allRecipe" style={getStyle}>
-      <div style={styleDiv2}>
-        <span style={{ fontSize: "40px", fontWeight: "500" }}>BUGER</span>
-        <div style={styleDiv}>
+    <div className="allRecipe">
+      <div className="all-item-wrapper">
+        <span>BUGER</span>
+        <div className="items">
           {buger.map((recip, index) => (
             <Recipe
               key={index}
@@ -79,9 +55,9 @@ const FetchRecipe = () => {
           ))}
         </div>
       </div>
-      <div style={styleDiv2}>
-        <span style={{ fontSize: "40px", fontWeight: "500" }}>Chicken</span>
-        <div style={styleDiv}>
+      <div className="all-item-wrapper">
+        <span>Chicken</span>
+        <div className="items">
           {chicken.map((recip, index) => (
             <Recipe
               key={index}
@@ -91,9 +67,9 @@ const FetchRecipe = () => {
           ))}
         </div>
       </div>
-      <div style={styleDiv2}>
-        <span style={{ fontSize: "40px", fontWeight: "500" }}>PASTRY</span>
-        <div style={styleDiv}>
+      <div className="all-item-wrapper">
+        <span>PASTRY</span>
+        <div className="items">
           {pastry.map((recip, index) => (
             <Recipe
               key={index}
@@ -103,9 +79,9 @@ const FetchRecipe = () => {
           ))}
         </div>
       </div>
-      <div style={styleDiv2}>
-        <span style={{ fontSize: "40px", fontWeight: "500" }}>PASTA</span>
-        <div style={styleDiv}>
+      <div className="all-item-wrapper">
+        <span>PASTA</span>
+        <div className="items">
           {pasta.map((recip, index) => (
             <Recipe
               key={index}
@@ -115,9 +91,9 @@ const FetchRecipe = () => {
           ))}
         </div>
       </div>
-      <div style={styleDiv2}>
-        <span style={{ fontSize: "40px", fontWeight: "500" }}>SALAD</span>
-        <div style={styleDiv}>
+      <div className="all-item-wrapper">
+        <span>SALAD</span>
+        <div className="items">
           {salad.map((recip, index) => (
             <Recipe
               key={index}
