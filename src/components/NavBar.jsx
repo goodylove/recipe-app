@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogoImage from "../assets/Ellipse 10.png";
+import LogoImage from "./assets/Ellipse 10.png";
 
 import "../styles/Nav.css";
 

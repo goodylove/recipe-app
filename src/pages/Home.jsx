@@ -1,13 +1,13 @@
 import react from "react";
-import ellipse from "../assets/Ellipse 10.png";
-import homeb from "../assets/bg4.jpg";
-import FetchRecipe from "./../components/common/FetchRecipie";
+import FetchRecipe from "../components/common/FetchRecipie";
+import Slider from "../components/Slider/Slider";
+import Image from "../components/assets/Ellipse 10.png";
 
 import "../styles/Home.css";
 
 const Home = () => {
   const myStyle = {
-    backgroundImage: `url(${homeb}`,
+    backgroundImage: `url(${Image}`,
     backgroundPosition: "center",
     backgroundSize: "cover",
     height: "500px",
@@ -20,8 +20,9 @@ const Home = () => {
   return (
     <div className="home">
       <div style={myStyle}>
-        <p>Savory & Sweet</p>
-        <img src={ellipse} alt="" />
+        {/* <p>Savory & Sweet</p>
+        <img src={ellipse} alt="" /> */}
+        <Slider />
       </div>
       <FetchRecipe />
     </div>

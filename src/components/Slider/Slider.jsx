@@ -1,5 +1,6 @@
 import React from "react";
 import sliderImage from "./SliderImage";
+import "./index.css";
 
 const Slider = () => {
   return (
