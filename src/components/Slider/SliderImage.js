@@ -4,12 +4,17 @@ import Slider3 from "../assets/bg3.jpg";
 
 const sliderImage = [
   {
-    imageUrl1: `url(${Slider})`,
+    imageUrl: `url(${Slider})`,
+    heading: "Savory & Sweet",
   },
   {
-    imageUrl2: `url(${Slider2})`,
+    imageUrl: `url(${Slider2})`,
+    heading: "Eat healthy",
   },
 
-  { imageUrl3: `url(${Slider3})` },
+  {
+    imageUrl: `url(${Slider3})`,
+    heading: "Yummy",
+  },
 ];
 export default sliderImage;
