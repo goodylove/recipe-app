@@ -14,7 +14,7 @@ const sliderImage = [
 
   {
     imageUrl: `${Slider3}`,
-    heading: "Yummy",
+    heading: "chop board",
   },
 ];
 export default sliderImage;

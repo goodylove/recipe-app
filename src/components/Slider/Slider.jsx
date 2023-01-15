@@ -8,8 +8,11 @@ import "./index.css";
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderLength = sliderImage.length;
-  const activateSlide = () => {
+  const nextSlide = () => {
     setCurrentSlide(currentSlide === sliderLength - 1 ? 0 : currentSlide + 1);
+  };
+  const prevSlide = () => {
+    setCurrentSlide(currentSlide === 0 ? sliderLength - 1 : currentSlide - 1);
   };
   useEffect(() => {
     setCurrentSlide(0);
@@ -17,8 +20,8 @@ const Slider = () => {
 
   return (
     <div className="slider">
-      <AiOutlineArrowLeft className="prev" />
-      <AiOutlineArrowRight className="next" onClick={activateSlide} />
+      <AiOutlineArrowLeft className="prev" onClick={prevSlide} />
+      <AiOutlineArrowRight className="next" onClick={nextSlide} />
       {sliderImage.map((slide, index) => {
         return (
           <div

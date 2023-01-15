@@ -7,34 +7,39 @@
 .img-content {
   height: 500px;
 }
-.img-content img{
-    height: 100%;
-    width: 100%;
+.img-content img {
+  height: 100%;
+  width: 100%;
 }
-.prev{
-   color: rgb(30, 193, 41);
-    background-color: blue;
-    font-size:3rem;
-    left: 20px;
-    position: absolute;
-   top:200px;
-   /* width: 100%; */
+.prev {
+  color: rgb(30, 193, 41);
+  background-color: rgb(243, 243, 249);
+  font-size: 3rem;
+  border-radius: 50px;
+  height: 3rem;
+  width: 3rem;
+  left: 20px;
+  position: absolute;
+  top: 200px;
+  /* width: 100%; */
 }
-.next{
-    color: rgb(30, 193, 41);
-font-size: 3rem;
-    right: 10px;;
-        position: absolute;
-        top: 200px;
-        /* width: 100%; */
-
-
+.next {
+  color: rgb(30, 193, 41);
+  font-size: 3rem;
+  right: 10px;
+  position: absolute;
+  background-color: rgb(235, 235, 244);
+  top: 200px;
+  border-radius: 50px;
+  height: 3rem;
+  width: 3rem;
+  /* width: 100%; */
 }
-.content{
-    font-size: 30px;
-    font-weight: 500;
-    position: absolute;
-    color: brown;
-    top: 200px;
-    left: 40%;
+.content {
+  font-size: 3rem;
+  font-weight: 500;
+  position: absolute;
+  color: rgb(255, 251, 251);
+  top: 200px;
+  left: 40%;
 }
