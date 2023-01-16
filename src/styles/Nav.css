@@ -22,14 +22,51 @@
 .bars-icon{
     display: none;
 }
-.hidden-link{
-    display: none;
+ .hidden-link{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    z-index: 100;
+    transform: translateX(-600px);
+    transition: 0.4s;
+    top :2px
 }
+ .hidden-link ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 24px;
+    font-weight: 300;
+}
+.hidden-link ul li  {
+    list-style-type: none;
+    text-decoration: none;
+    background: rgb(3, 151, 3);
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
 
 #img{
     width: 70px;
     height: 70px;
     flex:50%;
+}
+#open .hidden-link{
+transform: translateX(0);
+transition: 0.4s;
+
+}
+#close .hidden-link {
+    transform: translateX(-600px);
+    transform: 0.4s;
 }
 
 @media screen and (max-width: 768px){
