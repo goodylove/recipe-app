@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import Recipe from "../components/Recipe";
 import Form from "./../components/form/Form";
 import CateGorieItems from "./../components/Recipe2";
-
 import "./Categories.css";
-// import Ingredient from "./../components/Ingredients";
 
 const Categories = () => {
   const APP_KEY = "29d587081cd94aba8413d56404bfcead";
@@ -12,7 +10,7 @@ const Categories = () => {
 
   const [recipe, setRecipe] = useState([]);
   const [search, setsearch] = useState("");
-  const [query, setQuery] = useState("pastry");
+  const [query, setQuery] = useState("");
   const appApi = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   useEffect(() => {

@@ -8,7 +8,7 @@ const CateGorieItems = ({ image, label, ingredient }) => {
     backgroundColor: "whileSmoke",
     width: "80%",
     borderRadius: "5px",
-    boxShadow: "2px 2px 2px gray ,-2px -2px 2px  gray",
+    boxShadow: "2px 2px 2px gray,-2px -2px 2px  gray",
     listStyleType: "none",
     textAlign: "center",
   };
