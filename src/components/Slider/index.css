@@ -33,6 +33,7 @@
   border-radius: 50px;
   height: 3rem;
   width: 3rem;
+  z-index: 999;
   /* width: 100%; */
 }
 .content {
@@ -42,6 +43,7 @@
   color: rgb(255, 251, 251);
   top: 200px;
   left: 40%;
+  z-index: 999;
 }
 .next:hover{
   font-size: 1rem;

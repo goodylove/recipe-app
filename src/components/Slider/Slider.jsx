@@ -8,7 +8,7 @@ import "./index.css";
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderLength = sliderImage.length;
-  let autoScroll = true;
+  let autoScrollSlider = true;
   let sliderInterval;
   let timeInerval = 5000;
   const nextSlide = () => {
@@ -21,13 +21,13 @@ const Slider = () => {
     setCurrentSlide(0);
   }, []);
 
-  const auto = () => {
+  const activateAuto = () => {
     sliderInterval = setInterval(nextSlide, timeInerval);
   };
 
   useEffect(() => {
-    if (autoScroll) {
-      auto();
+    if (autoScrollSlider) {
+      activateAuto();
     }
     return () => clearInterval(sliderInterval);
   }, [currentSlide]);
