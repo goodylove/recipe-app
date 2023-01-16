@@ -6,7 +6,7 @@ const CateGorieItems = ({ image, label, ingredient }) => {
     justifyContent: "center",
     margin: "10px",
     backgroundColor: "whileSmoke",
-    width: "100%",
+    width: "80%",
     borderRadius: "5px",
     boxShadow: "2px 2px 2px gray ,-2px -2px 2px  gray",
     listStyleType: "none",
@@ -15,30 +15,41 @@ const CateGorieItems = ({ image, label, ingredient }) => {
 
   const itemStyle = {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
+    alignItems: "center",
+    width: "60%",
   };
   return (
     <div className="recipe" style={myStyle}>
-      <div>
+      <span style={{ fontSize: "20px", padding: "5px", fontWeight: "bold" }}>
+        <i>{label}</i>
+      </span>
+      <div style={itemStyle}>
         <span>
           <img
             src={image}
             alt=""
             style={{
-              width: "200px",
-              height: "150px",
+              width: "250px",
+              height: "200px",
               padding: "20px",
-              borderRadius: "5px",
+              borderRadius: "20px",
             }}
           />
-          <span style={{ fontSize: "20px", padding: "5px" }}>
-            <i>{label}</i>
-          </span>
         </span>
 
-        <ul>
-          {ingredient.map((item) => (
-            <li key={item.label}>{item.food}</li>
+        <ul style={{ listStyleType: "none" }}>
+          <span
+            style={{
+              fontSize: "22px",
+              fontFamily: "cursive",
+              textDecoration: "underline",
+            }}
+          >
+            ingredients
+          </span>
+          {ingredient.map((item, index) => (
+            <li key={index}>{item.food}</li>
           ))}
         </ul>
       </div>
