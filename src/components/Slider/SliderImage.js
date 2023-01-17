@@ -1,4 +1,4 @@
-import Slider from "../assets/b5.jpg";
+import Slider from "../assets/bg5.jpg";
 import Slider2 from "../assets/bg6.jpg";
 import Slider3 from "../assets/bg7.jpg";
 import Slider4 from "../assets/bg8.jpg";
