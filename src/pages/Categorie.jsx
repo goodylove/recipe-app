@@ -4,6 +4,8 @@ import Form from "./../components/form/Form";
 import CateGorieItems from "./../components/Recipe2";
 import "./Categories.css";
 
+import Loader from "./../components/Loader";
+
 const Categories = () => {
   const APP_KEY = "29d587081cd94aba8413d56404bfcead";
   const APP_ID = "ef6df93e";
@@ -11,6 +13,7 @@ const Categories = () => {
   const [recipe, setRecipe] = useState([]);
   const [search, setsearch] = useState("");
   const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(true);
   const appApi = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   useEffect(() => {
@@ -18,9 +21,11 @@ const Categories = () => {
   }, [query]);
 
   const getSeach = async () => {
+    setLoading(true);
     const res = await fetch(appApi);
     const data = await res.json();
     console.log(data.hits);
+    setLoading(false);
 
     setRecipe(data.hits);
   };
@@ -39,20 +44,24 @@ const Categories = () => {
     <div className="categories">
       <Form value={search} onchange={handleChange} onSubmit={handleSubmit} />
       {/* <FetchRecipe /> */}
-      <div className="recip">
-        {recipe.map((recip, index) => {
-          return (
-            <div className="r-ingred" key={index}>
-              <CateGorieItems
-                key={index}
-                label={recip.recipe.label}
-                image={recip.recipe.image}
-                ingredient={recip.recipe.ingredients}
-              />
-            </div>
-          );
-        })}
-      </div>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="recip">
+          {recipe.map((recip, index) => {
+            return (
+              <div className="r-ingred" key={index}>
+                <CateGorieItems
+                  key={index}
+                  label={recip.recipe.label}
+                  image={recip.recipe.image}
+                  ingredient={recip.recipe.ingredients}
+                />
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };

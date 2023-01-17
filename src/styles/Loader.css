@@ -78,7 +78,8 @@
     backface-visibility: hidden;
     transform-origin: 0 0;
     /* see note above */
-    left: 286px;
+    left: 266px;
+    top: 200px;
 }
 
 .ldio-0rlsv01vycol div {
@@ -98,6 +99,7 @@
             transform-origin: 0 0;
             /* see note above */
             left: 100px;
+            
         }
                 .loadingio-spinner-dual-ball-5kcljju2tak {
                     width: 500px;

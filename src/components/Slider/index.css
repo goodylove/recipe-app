@@ -10,6 +10,7 @@
 .img-content img {
   height: 100%;
   width: 100%;
+  padding: 0;
 }
 .prev {
   color: rgb(30, 193, 41);
@@ -62,16 +63,4 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 468px){
-.content {
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: absolute;
-    color: rgb(255, 251, 251);
-    top: 200px;
-    left: 20px;
-    z-index: 999;
-  }
 
-  
-}

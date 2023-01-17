@@ -23,7 +23,7 @@
     display: none;
 }
  .hidden-link{
-    display: flex;
+    /* display: none; */
     flex-direction: column;
     height: 100%;
     width: 80%;
@@ -32,7 +32,7 @@
     font-size: 20px;
     position: absolute;
     z-index: 100;
-    transform: translateX(-600px);
+    transform: translateX(-1200px);
     transition: 0.4s;
     top :2px
 }
@@ -65,7 +65,7 @@ transition: 0.4s;
 
 }
 #close .hidden-link {
-    transform: translateX(-600px);
+    transform: translateX(-1200px);
     transform: 0.4s;
 }
 
