@@ -32,7 +32,7 @@
     font-size: 20px;
     position: absolute;
     z-index: 100;
-    transform: translateX(-1200px);
+    transform: translateX(-1500px);
     transition: 0.4s;
     top :2px
 }
@@ -55,9 +55,9 @@
 
 
 #img{
-    width: 70px;
-    height: 70px;
-    flex:50%;
+    width: 50px;
+    height: 50px;
+    /* flex:50%; */
 }
 #open .hidden-link{
 transform: translateX(0);
@@ -65,11 +65,15 @@ transition: 0.4s;
 
 }
 #close .hidden-link {
-    transform: translateX(-1200px);
+    transform: translateX(-1500px);
     transform: 0.4s;
 }
 
 @media screen and (max-width: 768px){
+    .nav{
+        padding: 0;
+        margin-bottom: 3px;
+    }
 .nav .right-side{
     display: none;
 }

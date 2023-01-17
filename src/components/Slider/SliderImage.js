@@ -1,6 +1,8 @@
-import Slider from "../assets/bg.jpg";
-import Slider2 from "../assets/bg2.jpg";
-import Slider3 from "../assets/bg3.jpg";
+import Slider from "../assets/b5.jpg";
+import Slider2 from "../assets/bg6.jpg";
+import Slider3 from "../assets/bg7.jpg";
+import Slider4 from "../assets/bg8.jpg";
+import Slider5 from "../assets/bg9.jpg";
 
 const sliderImage = [
   {
@@ -14,6 +16,14 @@ const sliderImage = [
 
   {
     imageUrl: `${Slider3}`,
+    heading: "chop board",
+  },
+  {
+    imageUrl: `${Slider4}`,
+    heading: "chop board",
+  },
+  {
+    imageUrl: `${Slider5}`,
     heading: "chop board",
   },
 ];
