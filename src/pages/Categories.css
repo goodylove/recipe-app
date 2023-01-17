@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 45px;
     width: auto;
 }
 .recip{
@@ -26,6 +26,12 @@
   .recip{
     width: 100%
   }  
+
+    .categories {
+     
+      margin-top: 45px;
+    
+    }
 
 }
     
